@@ -1,0 +1,92 @@
+:root{
+    /* These are used for the general backgrounds, some of which have gradients */
+    --bg-800: rgba(70,46,117,.3);
+    --bg-800-clear: rgba(70,46,117,0);
+    --bg-900: rgba(50,30,91,.5);
+    --bg-900-clear: rgba(50,30,91,0);
+    /* IDK why but I can't local picture files to work, so this is a live link lol */
+    --bg-image: url('https://images.pling.com/img/00/00/62/69/92/1667082/purple-cosmos-stars-space1.jpg')
+
+    /* This is for some of the "buttons" on the page that aren't styled like buttons */
+    --bg-50: rgba(104,79,153,.3);
+
+    /* The input has a gradient on it, which I'm using to blend it into my background better
+       you'll probably want to keep it opaque. */
+    --bg-text-input-bottom: rgba(36,22,57,1);
+    --bg-text-input-top: rgba(44,28,69,1);
+
+    --code-block: var(--bg-900);
+
+
+    /* Changes the green buttons on the page & the "NEW" text next to "upgrade to plus" */
+    --primary-btn: rgba(174,136,0,1);
+    --primary-btn-text: #ffffff;
+}
+
+.dark body, body, #__next{
+    background-image: var(--bg-image) !important;
+    background-size: cover !important;
+}
+
+.dark .btn-neutral{
+    background: var(--bg-900) !important;
+}
+
+.btn-primary, .bg-yellow-200{
+    background-color: var(--primary-btn) !important;
+    color: var(--primary-btn-text) !important;
+}
+
+.bg-black{
+    background-color: var(--code-block)!important;
+}
+
+.hover\:bg-gray-100:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgba(236,236,241,var(--tw-bg-opacity));
+}
+
+.text-gray-500 {
+    --tw-text-opacity: 1;
+    color: rgba(142,142,160,var(--tw-text-opacity));
+}
+
+.bg-gray-50{
+    --tw-bg-opacity: 1;
+    background-color: var(--bg-50) !important;
+    /* background: unset !important; */
+}
+.bg-gray-800,
+.dark .dark\:bg-gray-800,
+.group-ui-open\:bg-gray-800,
+.hover\:bg-gray-800:hover {
+    background-color: var(--bg-800) !important;
+    /* background: unset !important; */
+}
+.bg-gray-900,
+.dark .dark\:bg-gray-900{
+    background-color: var(--bg-900) !important;
+    /* background: unset !important; */
+}
+
+.dark .dark\:md\:bg-vert-dark-gradient {
+    background-image: linear-gradient(180deg,var(--bg-text-input-top),var(--bg-text-input-bottom) 58.85%) !important;
+}
+
+.bg-gradient-to-t {
+    background-image: linear-gradient(to top, var(--bg-900-clear), var(--bg-900)) !important;
+}
+
+/* If you wanna mess with the scrollbar colors you can do it here */
+::-webkit-scrollbar-thumb {
+    --tw-border-opacity: 1;
+    background-color: var(--bg-700);
+    border-color: rgba(255,255,255,var(--tw-border-opacity));
+    border-radius: 9999px;
+    border-width: 1px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 9999px;
+}

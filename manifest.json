@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "ChatGPT Styler",
+  "version": "1.0",
+  "description": "Easy customization of chatGPT interface",
+
+  "permissions": [
+    "activeTab"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": [
+        "https://chat.openai.com/*"
+      ],
+      "css": [
+        "styles.css"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
