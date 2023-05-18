@@ -5,7 +5,7 @@
     --bg-900: rgba(50,30,91,.5);
     --bg-900-clear: rgba(50,30,91,0);
     /* IDK why but I can't local picture files to work, so this is a live link lol */
-    --bg-image: url('https://images.pling.com/img/00/00/62/69/92/1667082/purple-cosmos-stars-space1.jpg')
+    --bg-image: url('https://images.pling.com/img/00/00/62/69/92/1667082/purple-cosmos-stars-space1.jpg');
 
     /* This is for some of the "buttons" on the page that aren't styled like buttons */
     --bg-50: rgba(104,79,153,.3);
